@@ -1,0 +1,59 @@
+{% extends "core/base.html" %}
+{% block title %}Contact{% endblock title %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">CONTACT US</h1>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-5">
+            Do You Have Any Questions? Please do not hesitate to contact. 
+            I will come back to you within a matter of hours to help you.
+        </p>
+        <div class="col-sm-9 mb-5">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="inputName">Your Name</label>
+                        <input type="text" class="form-control" id="inputName" />
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="inputEmail">Your Email</label>
+                        <input type="email" class="form-control" id="inputEmail" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputSubject">Your Subject</label>
+                    <input type="text" class="form-control" id="inputSubject" />
+                </div>
+                <div class="mb-3">
+                    <label for="inputTextArea">Your Message*</label>
+                    <textarea class="form-control" id="inputTextArea" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="col-sm-3 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="https://maps.app.goo.gl/G389rv9UPbYCiV5U6"><I class="fas fa-map-marker-alt fa-2x i-color"></I></a>
+                    <p>Cleveland, Ohio 44114</p>
+                </li>
+                <li>
+                    <a href="tel:+12164635520"><I class="fas fa-phone mt-4 fa-2x i-color"></I></a>
+                    <p>+1 (216)-463-5520 </p>
+                </li>
+                <li>
+                    <a href="mailto:sohilmalek735@gmail.com"><I class="fas fa-envelope mt-4 fa-2x i-color"></I></a>
+                    <p>sohilmalek735@email.com</p>
+                </li>                
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <a href="#" target="_blank"><I class="fa-brands fa-twitter i-color mr-3"></I></a>
+    <a href="#" target="_blank"><I class="fa-brands fa-facebook i-color mr-3"></I></a>
+    <a href="#" target="_blank"><I class="fa-brands fa-instagram i-color mr-3"></I></a>
+    <a href="https://www.linkedin.com/in/sohil-malek-360b10261/" target="_blank"><I class="fa-brands fa-linkedin i-color mr-3"></I></a>
+</div>
+{% endblock content %}
+

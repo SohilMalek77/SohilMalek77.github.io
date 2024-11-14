@@ -1,0 +1,32 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<div class="mt-5 text-center">
+    <div class="text-center">
+        <img src="{% static "core/images/profile.jpg" %}" alt="profilepic" class="img-thambnail" width="250px" height="150px">
+    </div>
+    
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height : 2rem;">
+            <p> 
+                Innovative and goal-oriented Software Developer with a strong foundation in programming, data-driven solutions, 
+                and full-stack development. With hands-on experience in developing machine learning models and deploying scalable 
+                software applications, I am skilled in Python, JavaScript, C++, and frameworks like React and Django. My background 
+                includes building AI-driven applications, managing full-cycle web and mobile development projects, and implementing 
+                backend APIs to support data-rich platforms. 
+            </p>
+            <p>I am passionate about applying technology to solve complex problems, especially through agile, cross-functional collaboration. 
+                Known for optimizing algorithms for performance and scalability, I bring a proactive approach to project management, testing, 
+                and validation. With a Master's degree in Computer Science from Cleveland State University and hands-on industry experience, 
+                I am eager to leverage my expertise in a dynamic team environment where innovation and user impact are key.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+{% endblock content %}
